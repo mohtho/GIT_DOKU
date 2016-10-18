@@ -1,0 +1,9 @@
+
+
+git config --global user.name "Thomas Mohnl"
+git config --global user.email thomas.mohnl@atos.net
+
+// setup a local Repo
+mkdir GIT_DOKU
+cd GIT_DOKU/
+git init
