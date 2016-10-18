@@ -7,3 +7,11 @@ git config --global user.email thomas.mohnl@atos.net
 mkdir GIT_DOKU
 cd GIT_DOKU/
 git init
+
+// do a file
+
+git add first_steps.TXT
+git status
+git commit -m "very first steps"
+
+
