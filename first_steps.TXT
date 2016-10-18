@@ -3,6 +3,8 @@
 git config --global user.name "Thomas Mohnl"
 git config --global user.email thomas.mohnl@atos.net
 
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
 // setup a local Repo
 mkdir GIT_DOKU
 cd GIT_DOKU/
@@ -13,5 +15,21 @@ git init
 git add first_steps.TXT
 git status
 git commit -m "very first steps"
+
+git commit -a -m "add and commit"
+
+// connect to github Repo
+git remote add origin https://github.com/mohtho/GIT_DOKU.git
+
+// push file to github: 
+// -u, --set-upstream    set upstream for git pull/status
+git push -u origin master
+
+// pull files from githaub
+git pull origin master
+
+git remote -v
+origin  https://github.com/mohtho/GIT_DOKU.git (fetch)
+origin  https://github.com/mohtho/GIT_DOKU.git (push)
 
 
