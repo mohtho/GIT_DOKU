@@ -34,3 +34,11 @@ origin  https://github.com/mohtho/GIT_DOKU.git (push)
 
 
 git clone https://github.com/libgit2/libgit2 mylibgit
+
+//branching:
+git checkout  8e221ad3ef89f1369598e86baff9412cae770789
+git checkout -b test_01
+git branch --no-merged
+
+
+
