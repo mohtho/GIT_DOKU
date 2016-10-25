@@ -48,6 +48,7 @@ git log --pretty=format:"%h - %an, %ar : %s"
 git log --pretty=format:"%h %s" --graph
 git log --since=2.weeks
 git log --pretty="%h - %s" --author=mohtho --since="2016-10-01" --before="2016-11-01"
+git log -1 HEAD   // last command
 
 // tags annotated
 git tag -a 1.0 -m 'before introducing tags'
