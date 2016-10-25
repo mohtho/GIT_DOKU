@@ -39,6 +39,13 @@ git clone https://github.com/libgit2/libgit2 mylibgit
 git checkout  8e221ad3ef89f1369598e86baff9412cae770789
 git checkout -b test_01
 git branch --no-merged
+git branch -a
+git branch -vv
+git push origin test_01
+git push --set-upstream origin test_01
+
+git checkout -b serverfix origin/serverfix
+git checkout --track origin/serverfix
 
 
 
