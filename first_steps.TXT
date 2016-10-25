@@ -43,11 +43,18 @@ git log -p -1
 // statistics
 git log --stat
 
-// 
 git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar : %s"
 git log --pretty=format:"%h %s" --graph
 git log --since=2.weeks
 git log --pretty="%h - %s" --author=mohtho --since="2016-10-01" --before="2016-11-01"
+
+// tags annotated
+git tag -a 1.0 -m 'before introducing tags'
+git tag -a 1.2 9fceb02
+git -l 1*
+git show 1.0
+git push origin 1.0
+git push origin --tags
 
 
