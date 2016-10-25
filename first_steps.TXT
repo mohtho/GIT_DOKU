@@ -33,3 +33,4 @@ origin  https://github.com/mohtho/GIT_DOKU.git (fetch)
 origin  https://github.com/mohtho/GIT_DOKU.git (push)
 
 
+git clone https://github.com/libgit2/libgit2 mylibgit
