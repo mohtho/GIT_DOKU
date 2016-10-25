@@ -17,6 +17,7 @@ git status
 git commit -m "very first steps"
 
 git commit -a -m "add and commit"
+git commit --amend
 
 // connect to github Repo
 git remote add origin https://github.com/mohtho/GIT_DOKU.git
@@ -34,3 +35,19 @@ origin  https://github.com/mohtho/GIT_DOKU.git (push)
 
 
 git clone https://github.com/libgit2/libgit2 mylibgit
+
+// commit history
+// diff one level back
+git log -p -1
+
+// statistics
+git log --stat
+
+// 
+git log --pretty=oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --pretty=format:"%h %s" --graph
+git log --since=2.weeks
+git log --pretty="%h - %s" --author=mohtho --since="2016-10-01" --before="2016-11-01"
+
+
