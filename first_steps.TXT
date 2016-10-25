@@ -50,6 +50,20 @@ git log --since=2.weeks
 git log --pretty="%h - %s" --author=mohtho --since="2016-10-01" --before="2016-11-01"
 git log -1 HEAD   // last command
 
+//branching:
+git checkout  8e221ad3ef89f1369598e86baff9412cae770789
+git checkout -b test_01
+git branch --no-merged
+git branch -a
+git branch -vv
+git push origin test_01
+git push --set-upstream origin test_01
+
+git checkout -b serverfix origin/serverfix
+git checkout --track origin/serverfix
+
+
+
 // tags annotated
 git tag -a 1.0 -m 'before introducing tags'
 git tag -a 1.2 9fceb02
