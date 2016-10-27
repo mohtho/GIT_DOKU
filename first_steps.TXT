@@ -5,6 +5,17 @@ git config --global user.email thomas.mohnl@atos.net
 
 git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
+git config --global merge.tool kdiff3
+git config --global mergetool.kdiff3.cmd '"C:\\Program Files (x86)\\KDiff3\\kdiff3" $BASE $LOCAL $REMOTE -o $MERGED'
+
+git config --global diff.tool kdiff3
+#git config --global diff.tool 'C:/Program Files (x86)/kdiff3/kdiff3.exe'
+#git config --global --add difftool.kdiff3.path "C:/Program Files (x86)/KDiff3/kdiff3.exe"
+git config --global --add difftool.kdiff3.trustExitCode false
+git config --global --add difftool.prompt false
+
+
+
 // setup a local Repo
 mkdir GIT_DOKU
 cd GIT_DOKU/
